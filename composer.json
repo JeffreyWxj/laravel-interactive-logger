@@ -1,0 +1,27 @@
+{
+  "name": "jeffrey-wxj/laravel-interactive-logger",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "JeffreyWxj",
+      "email": "1737723363@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "JeffreyWxj\\LaravelInteractiveLogger\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JeffreyWxj\\LaravelInteractiveLogger\\InteractiveLoggerServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  }
+}
