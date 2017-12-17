@@ -18,10 +18,11 @@ class InteractiveLoggerServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        // if ($this->enabled) {
-        $this->loadRoutesFrom(__DIR__ . '/routes.php');
-        $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
-        // }
+        if ($this->enabled) {
+            $this->loadRoutesFrom(__DIR__ . '/routes.php');
+            $this->loadViewsFrom(__DIR__.'/views','interactive-logger');
+        }
+            $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
     }
 
     public function register()
